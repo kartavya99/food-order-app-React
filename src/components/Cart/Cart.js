@@ -1,4 +1,5 @@
 import { useContext } from "react";
+
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import classes from "./Cart.module.css";
@@ -19,7 +20,7 @@ const Cart = (props) => {
   };
 
   const cartItems = (
-    <ul className={classes["cart-item"]}>
+    <ul className={classes["cart-items"]}>
       {cartCtx.items.map((item) => (
         <CartItem
           key={item.id}
